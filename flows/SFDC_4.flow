@@ -10,9 +10,7 @@
         </value>
     </choices>
     <choices>
-	
-
-        <name>PhoneChoice</name>
+	        <name>PhoneChoice</name>
         <choiceText>Phone</choiceText>
         <dataType>String</dataType>
         <value>
