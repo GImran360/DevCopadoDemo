@@ -11,7 +11,7 @@
     </choices>
     <choices>
 	
-	
+
         <name>PhoneChoice</name>
         <choiceText>Phone</choiceText>
         <dataType>String</dataType>
