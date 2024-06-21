@@ -1,0 +1,20 @@
+<template>
+    <lightning-card title="Task List">
+        <div class="slds-m-around_medium">
+            <lightning-input type="text" label="Search" onchange={handleSearch} class="slds-m-bottom_medium"></lightning-input>
+            <lightning-datatable
+                key-field="Id"
+                data={tasks}
+                columns={columns}
+                max-row-selection="1"
+                hide-checkbox-column
+                onsave={handleSave}
+                draft-values={draftValues}
+                onrowaction={handleRowAction}>
+            </lightning-datatable>
+            <template if:true={showViewMore}>
+                <lightning-button label="View More" onclick={handleViewMore} class="slds-m-top_medium"></lightning-button>
+            </template>
+        </div>
+    </lightning-card>
+</template>
